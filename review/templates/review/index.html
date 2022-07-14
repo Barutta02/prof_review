@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
-
+{% load static %}
 
 <head>
-    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,97 +13,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-   
+    <link href="{% static 'review/style.css' %}" rel="stylesheet">
     <title>Prof Review</title>
-    <style>
-.form_conteiner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.form_conteiner form{
-    display: flex;
-    align-items: center;
-}
-
-.form_conteiner input ,
-.form_conteiner button{
-    margin: 5px;
-}
-.row{
-    margin-bottom: 30px;
-}
-.row div{
-    height: 200px;
-    margin: 5px;
-    width: auto;
-}
-
-.card{
-    position: relative;
-    left: calc(50% - 9rem);
-    -webkit-box-shadow: 16px 24px 36px 6px rgba(0,0,0,0.4); 
-    box-shadow: 16px 24px 36px 6px rgba(0,0,0,0.4);
-    border-radius: 15px;
-    
-}
- .card-text{
-    overflow-y: scroll;
-    height: 50%;
-}
-.checked {
-    color: orange;
-  }
-
-.form_add{
-    position: absolute;
-    width: 40vw;
-    height: auto;
-    background: #fff;
-    left: 30vw;
-    top: 10vh;
-    border: 1px solid #000;
-    border-radius: 10px;
-    display: none;
-    padding: 10px;
-}
-
-.close_prof_window{
-   float: right;
-}
-.add_prof{
-    float: left;
-}
-.raccomandation{
-    color: red;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-   
-}
-::-webkit-scrollbar-track {
-    background-color: darkgrey;
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-@media only screen and (max-width: 600px) {
-    .form_add{
-        width: 80vw;
-        left: 10vw;
-        height: auto;
-        top: 25vh;
-    }
-    .row{
-        flex-direction: column;
-        align-items: center;
-    }
-  }
-    </style>
 </head>
 
 <body>
@@ -113,6 +23,7 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">
+                <!--<img src="{% static 'review/prof.PNG' %}" alt="" width="30" height="24" class="d-inline-block align-top">-->
                 Prof Review
             </a>
         </div>
